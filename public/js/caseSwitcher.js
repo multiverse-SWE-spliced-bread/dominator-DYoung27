@@ -12,19 +12,19 @@ lower = () => {
 }
 
 sarcasm = () => {
-    count = 0;
-    for (i of pat.innerText){
-        console.log(i.toUpperCase())
-        if (i != ' ') {
+    let count = 0;
+    for (i = 0; i < pat.innerText.length; i++) {
+        if (pat.innerText.charAt(i) != ' ') {
             if (count % 2) {
-                pat.innerText = pat.innerText.slice(0, count) + i.toUpperCase() + pat.innerText.slice(count + 1, pat.innerText.length)
+                pat.innerText = pat.innerText.substring(0, i) + pat.innerText.charAt(i).toUpperCase() + pat.innerText.substring(i + 1)
             }
-            else {
-                pat.innerText = pat.innerText.slice(0, count) + i.toLowerCase() + pat.innerText.slice(count + 1, pat.innerText.length)
-            }count++
+            else {pat.innerText = pat.innerText.substring(0, i) + pat.innerText.charAt(i).toLowerCase() + pat.innerText.substring(i + 1)
+            }
+            count++
         }
     }
 }
+
 
 quiet.addEventListener("click", lower)
 loud.addEventListener("click", upper)
