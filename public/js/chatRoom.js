@@ -5,6 +5,6 @@ const newP = document.createElement('p')
 
 send.onclick = function() {
     newP.innerText = enter.value
-    enter.value = " "
+    enter.value = ""
     chat.appendChild(newP)
 }

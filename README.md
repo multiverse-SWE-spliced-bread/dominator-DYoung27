@@ -49,9 +49,9 @@ When you sync your changes, the same tests will be run on the server and, when t
 
 ### Chat room :pencil:
 
- - [ ] Connect `chat-room.html` with `chatRoom.js`
- - [ ] Use javascript to listen for the click event of the `send-btn` - when the button is clicked, the contents of the text input should be appended as a child `<p>` element to the `<section id="chat">` element.
- - [ ] When the message is sent, the text input should be emptied.
+ - [x] Connect `chat-room.html` with `chatRoom.js`
+ - [x] Use javascript to listen for the click event of the `send-btn` - when the button is clicked, the contents of the text input should be appended as a child `<p>` element to the `<section id="chat">` element.
+ - [x] When the message is sent, the text input should be emptied.
 
 You might find [this w3 page](https://www.w3schools.com/jsref/prop_text_value.asp) useful!
 
