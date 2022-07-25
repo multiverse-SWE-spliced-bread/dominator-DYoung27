@@ -14,7 +14,7 @@ lower = () => {
 sarcasm = () => {
     let count = 0;
     for (i = 0; i < pat.innerText.length; i++) {
-        if (pat.innerText.charAt(i) != ' ') {
+        if (/^[a-zA-Z]+$/.test(pat.innerText.charAt(i))) {
             if (count % 2) {
                 pat.innerText = pat.innerText.substring(0, i) + pat.innerText.charAt(i).toUpperCase() + pat.innerText.substring(i + 1)
             }
