@@ -21,8 +21,8 @@ sarcasm = () => {
             }
             else {
                 pat.innerText = pat.innerText.slice(0, count) + i.toLowerCase() + pat.innerText.slice(count + 1, pat.innerText.length)
-            }
-        }count++
+            }count++
+        }
     }
 }
 
