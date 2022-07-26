@@ -1,8 +1,8 @@
 const contain = document.getElementById('blocks')
 const block = document.getElementById('block-1')
-block.addEventListener("mouseover", function(){block.style.visibility = 'hidden'})
+block.addEventListener("mouseover", function(){block.remove()})
 
-for (i = 1; i < 100; i++) {
+for (i = 1; i <= 100; i++) {
 
     // Create each box element with class and id
     const el = document.createElement('div')
@@ -13,5 +13,5 @@ for (i = 1; i < 100; i++) {
     contain.appendChild(el)
 
     // Make the cursor invisible for boxes
-    el.addEventListener("mouseover", function(){el.style.visibility = 'hidden'});
+    el.addEventListener("mouseover", function(){el.remove()});
 }
