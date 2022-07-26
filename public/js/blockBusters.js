@@ -11,5 +11,5 @@ for (i = 2; i <= 100; i++) {
     contain.appendChild(el)
 
     // Make the cursor invisible for boxes
-    el.style.cursor = 'none';
+    el.addEventListener("mouseover", function(){el.style.visibility = 'hidden'});
 }
