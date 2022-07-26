@@ -1,6 +1,6 @@
 const contain = document.getElementById('blocks')
 
-for (i = 2; i <= 100; i++) {
+for (i = 2; i < 100; i++) {
 
     // Create each box element with class and id
     const el = document.createElement('div')
